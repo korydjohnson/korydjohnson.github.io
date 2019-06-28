@@ -27,7 +27,7 @@
 	A-1090 Vienna<br />
 	Room 6.602<br />
 	kory.johnson(at)univie.ac.at<br />
-	<a href="KoryJohnson-CV.pdf", target="_blank"> Curriculum Vitae </a>
+	<a href="CV.pdf", target="_blank"> Curriculum Vitae </a>
       </p></br></br></br></br></br></br>
 
  	  <h2> Background </h2>
@@ -41,9 +41,25 @@
 	    <a href="http://www-stat.wharton.upenn.edu/~stine/", target = "_blank">Robert Stine</a> and 
 	    <a href="http://gosset.wharton.upenn.edu/~foster/index.pl", target = "_blank">Dean Foster</a>. </p>
 
-	<p> Broadly speaking, my research focuses on feature selection, post-selection inference, and 
-		Fairness, Accountability, and Transparency in Machine Learning 
-		(<a href="http://www.fatml.org/", target="_blank">FATML</a>).</p>
+	<p> My research is motivated by transparent machine learning methods. This includes 
+		valid and computationally efficient versions of forward stepwise regression, 
+		post-processing methods to correct the estimates of any algorithm to ensure 
+		fairness, and valid prediction intervals for ``black-box'' models such as deep 
+		neural networks and random forests. My work on forward stepwise allows one to 
+		search complex interaction spaces while controlling for false rejections. There
+		is a publicly available R package that can be used to fit these models:
+		<a href="https://github.com/korydjohnson/rai", target="_blank">rai</a>.
+		Fairness aware data mining (<a href="http://www.fatml.org/", target="_blank">FATML</a>)
+		considers the reverse problem to 
+		feature selection: the discrete removal of the influence of a covariate. Merely 
+		excluding a covariate such as race does not necessarily remove its influence due 
+		to its relationship with other covariates. My work effectively separates 
+		prediction and fairness goals, allowing modelers to focus on generating highly 
+		predictive models without incorporating the constraint of fairness. Lastly, the 
+		prediction intervals are distribution-free, in that they only require 
+		independent and identically distributed data. Their construction 
+		is transparent enough that their use should become standard practice, much like 
+		reporting standard errors along with mean estimates. </p>
 
 	<p> Note that my CV (above) is kept more up-to-date than this site.</p>
 	  
@@ -55,6 +71,13 @@
 	  
 	  <h2> Papers </h2> 
 	<ul style="width: 620px"> 
+
+	<li> <u> <a href="https://arxiv.org/abs/1905.10634", target="_blank">
+		Adaptive, distribution-free prediction intervals for deep neural networks.</a></u></u><br />
+		Danijel Kivaranovic, Kory D Johnson, and Hannes Leeb. <br />
+    	       <i>Submitted.</i></li>
+	</br>
+
 	<li> <u> Sequential Testing for Inference During Model Selection: Valid Stepwise Regression.</u></u><br />
 		Johnson, K. D., Brown, L. D., Foster, D. P., and Stine, R. A. <br />
     	       <i>In Preparation.</i></li>
@@ -84,36 +107,36 @@
           <!--<h2 id="software"> Software </h2>
 <p> <a href="http://cran.r-project.org/web/packages/ivmodel/index.html">rai</a>: Implementation of the Revisiting Alpha-Investing (RAI) algorithm for feature selection. RAI provides a fast, scalable approximation to stepwise regression that is guaranteed to control the marginal false discovery rate.</p> -->
  
+	  <h2> Teaching </h2>
+
+	  <h4> Instructor: Lecturer </h4>
+		<p> Winter 2018: Statistical Programming: Introduction to R  </p>
+		<p> Summer 2018: Large-Scale Inference (master's level)  </p>
+		<p> Winter 2017: Data Science Case Studies in R (master's level)  </p>
+		<p> Summer 2017: Nonparametric Inference (master's level)  </p>
+		<p> Summer 2015: Introductory Business Statistics  </p>
+
+	  <h4> Instructor: Exercise Course </h4>
+		<p> Summer 2017: Statistical Inference  </p>
+		<p> Winter 2016: Linear Models  </p>
+		<p> Spring 2015: Introductory Statistics  </p>
+		<p> Spring 2012: Introductory Statistics </p>
+
+	  <h4> Teaching Assistant </h4> 
+		<p> Spring 2016: Modern Regression for the Social, Behavioral, and Biological Sciences</p>
+		<p> Fall 2015: Introductory Business Statistics II</p>
+		<p> Fall 2014: Introductory Business Statistics I </p>
+		<p> Spring 2014: Applied Econometrics II </p>
+		<p> Fall 2013: Intermediate Statistics</p>
+		<p> Spring 2013: Introductory Business Statistics I</p>
+		<p> Fall 2012: Applied Econometrics I</p>
+		<p> Fall 2011: Introductory Business Statistics II</p>
+
 	  <h2> Honors and Awards </h2>
 		<p> <i> SIAM Student Travel Award</i>, 2014. SIAM International Conference on Data Mining. <br />
         	</p>
 		<p> <i> Elected to Phi Beta Kappa</i>, 2011. University of Pennsylvania.<br />
         	</p>
-
-	  <h2> Teaching </h2>
-
-		<p> Current: Linear Models <br />
-		<font size="0.8"> <a href="homework.zip", target="_blank"> Homework</a>.</font> </p>
-
-	  <h4> Instructor </h4>
-  		<p> Summer 2015: Statistics 101-Introductory Business Statistics. <br />
-		<font size="0.8"> Overall quality of the instructor (average): 3.39 (on scale 0 to 4 with 4 = highest). 
-			Click <a href="TeachingEvaluations101.pdf", target="_blank"> Here</a> for evaluations.</font> </p>
-	
-
-	  <h4> Recitation Instructor </h4>
-		<p> Spring 2015: Statistics 111-Introductory Statistics. </p>
-		<p> Spring 2012: Statistics 111-Introductory Statistics. </p>
-
-	  <h4> Teaching Assistant </h4> 
-		<p> Spring 2016: Statistics 474/974-Modern Regression for the Social, Behavioral, and Biological Sciences.</p>
-		<p> Fall 2015: Statistics 102-Introductory Business Statistics. </p>
-		<p> Fall 2014: Statistics 101-Introductory Business Statistics. </p>
-		<p> Spring 2014: Statistics 521-Applied Econometrics II. </p>
-		<p> Fall 2013: Statistics 471-Intermediate Statistics. </p>
-		<p> Spring 2013: Statistics 101-Introductory Business Statistics. </p>
-		<p> Fall 2012: Statistics 520-Applied Econometrics I. </p>
-		<p> Fall 2011: Statistics 102-Introductory Business Statistics. </p>
 
 	  <h2> Personal </h2> 
 	 	<p> My non-academic hobbies are centered around rock climbing and mountaineering. 
