@@ -37,34 +37,22 @@
 		The Wharton School, University of Pennsylvania</a> and was co-advised by
 	    <a href="http://www-stat.wharton.upenn.edu/~stine/", target = "_blank">Robert Stine</a> and 
 	    <a href="http://gosset.wharton.upenn.edu/~foster/index.pl", target = "_blank">Dean Foster</a>. </p>
+  
+  <p> My research covers two broad domains: data-focused statistical analysis in epidemiology and fairness-aware data mining (FADM) and methodology within transparent machine learning. In both domains, I have written R packages which are available on <a href="https://github.com/korydjohnson/", target="_blank">github</a>.</p>
 
-	<p> My research is motivated by transparent machine learning methods. This includes 
-		valid and computationally efficient versions of forward stepwise regression, 
-		post-processing methods to correct the estimates of any algorithm to ensure 
-		fairness, and valid prediction intervals for ``black-box'' models such as deep 
-		neural networks and random forests. My work on forward stepwise allows one to 
-		search complex interaction spaces while controlling for false rejections. There
-		is a publicly available R package that can be used to fit these models:
-		<a href="https://github.com/korydjohnson/rai", target="_blank">rai</a>.
-		Fairness aware data mining (<a href="http://www.fatml.org/", target="_blank">FATML</a>)
-		considers the reverse problem to 
-		feature selection: the discrete removal of the influence of a covariate. Merely 
-		excluding a covariate such as race does not necessarily remove its influence due 
-		to its relationship with other covariates. My work effectively separates 
-		prediction and fairness goals, allowing modelers to focus on generating highly 
-		predictive models without incorporating the constraint of fairness. Lastly, the 
-		prediction intervals are distribution-free, in that they only require 
-		independent and identically distributed data. Their construction 
-		is transparent enough that their use should become standard practice, much like 
-		reporting standard errors along with mean estimates. </p>
+  <p> In epidemiology and in context of the COVID-19 pandemic, we propose and estimate a Bayesian hierarchical model which accounts for super-spreading. This dramatically increases the width of credible intervals for quantities of primary interest and thus can alter real-world decision making. We then extend these models to account for the diversity in resistance within a population to infection with SARS-CoV-2. We develop a simulation framework that functions as a dynamic compartment model in which an individual's history of infection, vaccination, and possible reinfection all play a role in their resistance to further infections. This can be used to explore possible infection trajectories of new viral variants as well as understand which variant characteristics are most relevant to different populations given their unique immune landscape.</p>
+
+  <p> FADM aims to prevent machine learning algorithms from discriminating on the basis of protected features such as race or gender. It considers the reverse problem to feature selection: the discrete removal of the influence of a feature. Merely excluding a feature such as race does not necessarily remove its influence due to its relationship with other features. My work effectively separates prediction and fairness goals by adjusting the output of an arbitrary model to achieve fairness. The impartial models I have developed have direct applications both for pricing government programs as well as within legal settings.</p>
+
+  <p> Transparent machine learning aims make black-box models more tractable and yield conceptual insight in addition to their predictive performance. I have made contributions within post-selection inference, which is the study of hypothesis testing when the tests are identified by analyzing the same data set which will subsequently be used when performing the test. Such exploratory data analysis is not only ubiquitous, but is also known to invalidate the resulting hypothesis tests. Other work provides valid prediction intervals with performance guarantees for black-box models such as deep neural networks and quantile random forests. The machine learning literature contains other methods that are intuitively reasonable but ultimately ad-hoc in that they do not come with such performance guarantees.</p>
 
 	<p> For publications, teaching, software, and associated links, see my CV (above).</p>
 	  
 	  <h2> Education </h2> 
 	  <p> PhD Statistics, The Wharton School, University of Pennsylvania, 2016. </p>
 	  <p> MA Statistics, The Wharton School, University of Pennsylvania, 2016. </p>
-	  <p> BS Economics-Concentration in Statistics, The Wharton School, University of Pennsylvania, 2011. </p> 
-	  <p> BA Economics and Philosophy, College of Arts and Sciences, University of Pennsylvania, 2011. </p> 
+	  <p> BS Economics, The Wharton School, University of Pennsylvania, 2011. </p> 
+	  <p> BA with distinction in Economics and Philosophy, College of Arts and Sciences, University of Pennsylvania, 2011. </p> 
 	  
     </div>
   </body>
